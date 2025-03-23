@@ -38,10 +38,12 @@ Esto resulta útil cuando la inyección de ACPI genera problemas en otros sistem
 
 ---
 
-> [!NOTE] 📝  
-> Si solo quieres evitar la inyección de SMBIOS en Windows con la versión oficial de OpenCore, ajusta estas configuraciones en tu `config.plist`:  
+> [!TIP] 💡  
+> **¿Solo necesitas evitar la inyección de SMBIOS en Windows?**  
+> No requieres esta bifurcación. Con la versión oficial de OpenCore, puedes lograrlo ajustando estas configuraciones en tu config.plist:  
 > - `Kernel/Quirks/CustomSMBIOSGuid` = `YES`  
-> - `PlatformInfo/SMBIOS/UpdateSMBIOSMode` = `Custom`
+> - `PlatformInfo/SMBIOS/UpdateSMBIOSMode` = `Custom`  
+> ¡Guarda los cambios y listo!
 
 ---
 
